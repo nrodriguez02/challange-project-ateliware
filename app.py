@@ -1,4 +1,3 @@
-import os
 from sqlalchemy_utils import database_exists
 from config import create_app, setup_database
 from flask_bootstrap import Bootstrap5

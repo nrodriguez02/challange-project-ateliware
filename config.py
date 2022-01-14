@@ -1,3 +1,4 @@
+import os
 from flask import Flask
 from flask_migrate import Migrate
 
@@ -17,12 +18,15 @@ DATABASE = {
     'port': '5432',
 }
 
+# Get database url from environment variables on Heroku else Docker
+database_url = os.environ.get('DATABASE_URL', '%(engine)s://%(user)s:%(pw)s@%(host)s:%(port)s/%(db)s' % DATABASE)
+
 
 def create_app():
     app = Flask(__name__)
     migrate = Migrate()
     app.config['DEBUG'] = True
-    app.config['SQLALCHEMY_DATABASE_URI'] = '%(engine)s://%(user)s:%(pw)s@%(host)s:%(port)s/%(db)s' % DATABASE
+    app.config['SQLALCHEMY_DATABASE_URI'] = database_url
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
     app.secret_key = 'cd48e1c22de0961d5d1bfb14f8a66e006cfb1cfbf3f0c0f3'
     db.init_app(app)
