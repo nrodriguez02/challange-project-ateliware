@@ -1,4 +1,4 @@
-# Ateliware Dev Challange
+# Ateliware project challange
 
 Construa uma nova aplicação, utilizando o framework de sua preferência (Ruby on Rails, Elixir Phoenix, Python Django ou Flask, NodeJS Sails, Java Spring, ASP.NET ou outro), a qual deverá conectar na API do GitHub e disponibilizar as seguintes funcionalidades:
 
@@ -10,14 +10,18 @@ Visualizar os detalhes de cada repositório.
 # About this project
 
 - Python 3.10
-- Frontend Framework: Flask
-- Docker, Deploy Heroku, Unit Test
+- Postgres 14
+- Frontend Framework: Flask, Bootstrap
+- Docker
+- Deploy Heroku
+- Unit Test
 
 
 # Installation steps
 - open project in terminal and run:
-	- $ docker-compose up --build 
+    - $ docker-compose up --build
 
 
 # Requirements
 - Docker
+- 
