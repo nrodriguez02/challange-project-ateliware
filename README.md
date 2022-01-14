@@ -24,3 +24,4 @@ Visualizar os detalhes de cada repositório.
 
 # Requirements
 - Docker
+- 
