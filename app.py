@@ -7,6 +7,12 @@ app.app_context().push()
 bootstrap = Bootstrap5(app)
 
 if __name__ == '__main__':
-    setup_database(app)
+    from models.database import db
+
+
+    @app.before_first_request
+    def create_tables():
+        db.create_all()
+
 
     app.run(port=8001, debug=True)
