@@ -42,5 +42,5 @@ def create_app():
 
 
 def setup_database(app):
-    db.create_all()
-    print('########################## OKKK ##############')
+    with app.app_context():
+        db.create_all()
