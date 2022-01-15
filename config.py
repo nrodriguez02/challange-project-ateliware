@@ -6,7 +6,6 @@ from models.database import db
 
 from views.history import history_blueprints
 from views.search import search_blueprints
-from views.index import index_blueprints
 
 # DB CONNECTION
 DATABASE = {
@@ -36,6 +35,5 @@ def create_app():
     db.init_app(app)
     migrate.init_app(app, db)
     app.register_blueprint(history_blueprints, url_prefix="/history")
-    app.register_blueprint(search_blueprints, url_prefix="/search")
-    app.register_blueprint(index_blueprints, url_prefix="/")
+    app.register_blueprint(search_blueprints, url_prefix="/")
     return app

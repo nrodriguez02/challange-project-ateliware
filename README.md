@@ -11,17 +11,17 @@ Visualizar os detalhes de cada repositório.
 
 - Python 3.10
 - Postgres 14
-- Frontend Framework: Flask, Bootstrap
+- Frontend Frameworks: Flask, Bootstrap
 - Docker
-- Deploy Heroku
+- Heroku
 - Unit Test
 
+# Deploy on Heroku
+- https://ateliware-project-challange.herokuapp.com/
 
 # Installation steps
 - open project in terminal and run:
     - $ docker-compose up --build
 
-
 # Requirements
 - Docker
-- 
