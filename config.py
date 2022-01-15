@@ -14,7 +14,7 @@ DATABASE = {
     'user': 'postgres',
     'pw': 'QWERTY',
     'db': 'postgres',
-    'host': 'postgresdb',#postgresdb on docker
+    'host': 'postgresdb',  # postgresdb on docker
     'port': '5432',
 }
 
