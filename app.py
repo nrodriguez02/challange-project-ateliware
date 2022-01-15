@@ -7,7 +7,6 @@ app.app_context().push()
 bootstrap = Bootstrap5(app)
 
 if __name__ == '__main__':
-    if database_exists(app.config["SQLALCHEMY_DATABASE_URI"]):
-        setup_database(app)
+    setup_database(app)
 
     app.run(port=8001, debug=True)
