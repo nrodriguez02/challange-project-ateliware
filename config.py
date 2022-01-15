@@ -22,6 +22,7 @@ DATABASE = {
 database_url = os.environ.get('DATABASE_URL', '%(engine)s://%(user)s:%(pw)s@%(host)s:%(port)s/%(db)s' % DATABASE)
 if database_url and database_url.startswith("postgres://"):
     database_url = database_url.replace("postgres://", "postgresql://", 1)
+    print(database_url)
 # rest of connection code using the connection string `database_url`
 
 

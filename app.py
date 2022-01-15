@@ -7,12 +7,8 @@ app.app_context().push()
 bootstrap = Bootstrap5(app)
 
 if __name__ == '__main__':
-    from models.database import db
-
-
-    @app.before_first_request
-    def create_tables():
-        db.create_all()
-
+    if database_exists(app.config["SQLALCHEMY_DATABASE_URI"]):
+        print('########################## OKKK ##############')
+        setup_database(app)
 
     app.run(port=8001, debug=True)
