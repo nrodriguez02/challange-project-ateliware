@@ -39,8 +39,3 @@ def create_app():
     app.register_blueprint(search_blueprints, url_prefix="/search")
     app.register_blueprint(index_blueprints, url_prefix="/")
     return app
-
-
-def setup_database(app):
-    with app.app_context():
-        db.create_all()
