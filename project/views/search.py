@@ -1,6 +1,5 @@
-import requests
 from flask import Blueprint, request, render_template
-from controllers.Core import get_languages, search_github
+from project.controllers.Core import get_languages, search_github
 
 search_blueprints = Blueprint("search", __name__)
 

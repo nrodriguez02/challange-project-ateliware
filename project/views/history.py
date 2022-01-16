@@ -1,6 +1,5 @@
 from flask import Blueprint, request, render_template
-from models.database import History
-from datetime import datetime
+from project.models.database import History
 
 history_blueprints = Blueprint("history", __name__)
 

@@ -1,10 +1,10 @@
 from datetime import datetime
-from models.database import db, History
+from project.models.database import db, History
 import json
 from types import SimpleNamespace
 from urllib.parse import urlencode
 import requests
-from models.repository import Repo
+from project.models.repository import Repo
 
 
 # DATABASE

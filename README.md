@@ -22,6 +22,25 @@ Visualizar os detalhes de cada repositório.
 # Installation steps
 - open project in terminal and run:
     - $ docker-compose up --build
+  
+- open browser on: http://127.0.0.1:8001
 
 # Requirements
 - Docker
+
+## Unit Tests
+- Test new Repository (language, full_name=, html_url, stargazers_count, description)
+- Test new History (email, fullname, language, url, description, date)
+- Check register information found on database
+
+## Functional Tests
+- Search:
+    - Test page response
+    - Test make a new search
+    - Test GET and POST methods
+
+- History:
+    - Test page response
+
+
+
