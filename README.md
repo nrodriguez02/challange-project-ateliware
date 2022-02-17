@@ -40,7 +40,7 @@ Visualizar os detalhes de cada repositório.
     - Test GET and POST methods
 
 - History:
-    - Test page response
+    - Test page responses.
 
 
 
