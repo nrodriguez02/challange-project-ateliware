@@ -13,7 +13,7 @@ Visualizar os detalhes de cada repositório.
 - Postgres 14
 - Frontend Frameworks: Flask, Bootstrap
 - Docker
-- Heroku
+- Deploy on Heroku
 - Unit Test
 
 # Deploy on Heroku
